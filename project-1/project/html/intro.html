@@ -1,0 +1,1580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .nav {
+            height: auto;
+            width: auto;
+            background-color: #daac00;
+            padding: 50px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .logo {
+            height: 100px;
+            width: 250px;
+            /* border: 2px solid red; */
+            background-image: url(../images/Vector\ Smart\ Object\ \(Double\ Click\ to\ Edit\)\ .svg);
+            /* background-size: cover; */
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .link>ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 29px;
+            color: #ffffff;
+            font-weight: 500;
+            font-family: "Poppins";
+        }
+
+        .search-bar {
+            width: 274px;
+            height: 51px;
+            box-shadow: 0px 0px 10px black;
+            display: flex;
+
+        }
+
+        .sub-1 {
+            height: 51px;
+            width: 200px;
+            background-color: #fcc302;
+
+        }
+
+        .k {
+            height: 51px;
+            width: 200px;
+            background-color: #fcc302;
+            border: none;
+        }
+
+        .k::placeholder {
+            color: white;
+        }
+
+        .sub-2 {
+            height: 51px;
+            width: 74px;
+            background-color: aqua;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .fa-solid {
+            font-size: 25px;
+            color: white;
+        }
+
+        @media only screen and (max-width:600px) {
+            .nav {
+                height: auto;
+                width: auto;
+                background-color: #daac00;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            ul {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                flex-direction: column;
+            }
+        }
+
+        #sec-1 {
+            height: auto;
+            width: auto;
+            background-color: #fcc302;
+            padding: 80px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .sec-sub-1 {
+            height: 500px;
+            width: 500px;
+            /* border: 2px solid red; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 35px;
+            text-align: center;
+        }
+
+        .text-1>h1 {
+            font-size: 67px;
+            letter-spacing: 1px;
+            color: #ffffff;
+            font-weight: 600;
+            font-family: "Poppins";
+        }
+
+        .text-2>p {
+            font-size: 29px;
+            letter-spacing: 0px;
+            color: #ffffff;
+            font-weight: 400;
+            font-family: "Poppins";
+        }
+
+        .buttons {
+            display: flex;
+            gap: 20px;
+        }
+
+        .btn-1>button {
+            width: 182px;
+            height: 69px;
+            border-radius: 7px;
+            background-color: #00bec9;
+            color: white;
+            border: none;
+        }
+
+        .btn-2>button {
+            width: 182px;
+            height: 69px;
+            border-radius: 7px;
+            background-color: #daac00;
+            border: 3px solid #ffffff;
+            color: white;
+        }
+
+        .sec-sub-2 {
+            height: 500px;
+            width: 400px;
+            /* border: 2px solid red; */
+            background-image: url(../images/Place\ Your\ Image\ Here\ \(Double\ Click\ to\ Edit\).svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        @media only screen and (max-width:600px) {
+            #sec-1 {
+                height: auto;
+                width: auto;
+                background-color: #fcc302;
+                padding: 80px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                flex-direction: column;
+                gap: 35px;
+            }
+        }
+
+        #sec-2 {
+            height: auto;
+            width: auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 40px;
+        }
+
+        .sec-sub-3 {
+            height: 500px;
+            width: 500px;
+            /* border: 2px solid red; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 35px;
+        }
+
+        .text-3>h1 {
+            font-size: 50px;
+            color: #313243;
+            font-weight: 600;
+            font-family: "Poppins";
+
+        }
+
+        .text-4>p {
+            font-size: 29px;
+            letter-spacing: 0px;
+            color: #313243;
+            font-weight: 400;
+            font-family: "Poppins";
+            margin-left: 30px;
+        }
+
+        .btn-3>button {
+            width: 182px;
+            height: 69px;
+            border-radius: 7px;
+            background-color: #fcc302;
+            color: white;
+        }
+
+        .sec-sub-4 {
+            height: 500px;
+            width: 600px;
+            /* border: 2px solid black; */
+            position: relative;
+            padding: 30px;
+        }
+
+        .a1 {
+            width: 252px;
+            height: 180px;
+            background-color: #fcc302;
+            position: absolute;
+            margin-top: 300px;
+        }
+
+        .a2 {
+            height: 400px;
+            width: 400px;
+            background-image: url(../images/Place\ Your\ Image\ Here.svg);
+            background-color: rgba(218, 172, 0, 0.5686274509803921);
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            margin-top: 30px;
+            margin-left: 50px;
+        }
+
+        .a3 {
+            height: 400px;
+            width: 400px;
+            background-image: url(../image/Shape1.svg);
+            position: absolute;
+            margin-top: 30px;
+            margin-left: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .a4 {
+            width: 60px;
+            height: 60px;
+            border-radius: 30px;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .fa-solid {
+            font-size: 25px;
+            color: #daac00;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+        }
+
+        @media only screen and (max-width:600px) {
+            #sec-2 {
+                height: auto;
+                width: auto;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                padding: 50px;
+                flex-direction: column;
+                gap: 35px;
+            }
+        }
+
+        #sec-3 {
+            height: auto;
+            width: auto;
+            background-color: #fcc302;
+            padding: 50px;
+        }
+
+        .text-5 {
+            padding: 50px;
+        }
+
+        .text-5 >  h1 {
+            font-size: 75px;
+            color: #ffffff;
+            font-weight: 700;
+            font-family: "Poppins";
+            text-align: center;
+        }
+
+        .text-5 >  p {
+            font-size: 33px;
+            color: #ffffff;
+            font-weight: 400;
+            font-family: "Poppins";
+            text-align: center;
+        }
+
+        .img {
+            height: 600px;
+            width: auto;
+            /* border: 2px solid black; */
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            gap: 100px;
+        }
+
+        .img>div {
+            height: 600px;
+            width: 300px;
+            /* border: 2px solid red; */
+        }
+
+        .img1 {
+            width: 300px;
+            height: 300px;
+            background-image: url(../image/img.1.svg);
+            background-repeat: no-repeat;
+        }
+
+        .box>h1 {
+            font-size: 38px;
+            color: #ffffff;
+            font-weight: 600;
+            font-family: "Poppins";
+            text-align: center;
+            padding: 10px;
+        }
+
+        .box>p {
+            font-size: 25px;
+            color: #ffffff;
+            font-weight: 400;
+            font-family: "Poppins";
+            text-align: center;
+            padding: 10px;
+        }
+
+        .img2 {
+            width: 300px;
+            height: 300px;
+            background-image: url(../image/img.2.svg);
+            background-repeat: no-repeat;
+        }
+
+        .img3 {
+            width: 300px;
+            height: 300px;
+            background-image: url(../image/img.3.svg);
+            background-repeat: no-repeat;
+        }
+
+        @media only screen and (max-width:600px) {
+            #sec-3 {
+                height: auto;
+                width: auto;
+                background-color: #fcc302;
+            }
+
+            .img {
+                height: auto;
+                width: auto;
+                /* border: 2px solid black; */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                flex-direction: column;
+            }
+
+            .box>h1 {
+                font-size: 38px;
+                color: #ffffff;
+                font-weight: 600;
+                font-family: "Poppins";
+                text-align: center;
+                padding: 10px;
+            }
+
+            .box>p {
+                font-size: 25px;
+                color: #ffffff;
+                font-weight: 400;
+                font-family: "Poppins";
+                text-align: center;
+                padding: 10px;
+            }
+        }
+
+        #sec-4 {
+            height: auto;
+            width: auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 40px;
+        }
+
+        .sec-sub-7 {
+            height: 500px;
+            width: 600px;
+            /* border: 2px solid black; */
+            position: relative;
+            padding: 30px;
+        }
+
+        .a5 {
+            width: 252px;
+            height: 180px;
+            background-color: #fcc302;
+            position: absolute;
+            margin-left: 260px;
+            margin-top: 300px;
+        }
+
+        .a6 {
+            height: 400px;
+            width: 400px;
+            background-image: url(../image/Place\ Your\ Image\ Here1.svg);
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            margin-top: 30px;
+            margin-left: 50px;
+        }
+
+        .a7 {
+            height: 400px;
+            width: 400px;
+            background-image: url(../image/Shape1.svg);
+            position: absolute;
+            margin-top: 30px;
+            margin-left: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .a8 {
+            width: 60px;
+            height: 60px;
+            border-radius: 30px;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .fa-solid {
+            font-size: 25px;
+            color: #daac00;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+        }
+
+        .sec-sub-8 {
+            height: 500px;
+            width: 500px;
+            /* border: 2px solid red; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 35px;
+        }
+
+        .text-7>h1 {
+            font-size: 50px;
+            color: #313243;
+            font-weight: 600;
+            font-family: "Poppins";
+
+        }
+
+        .text-8>p {
+            font-size: 29px;
+            letter-spacing: 0px;
+            color: #313243;
+            font-weight: 400;
+            font-family: "Poppins";
+            /* margin-left: 30px; */
+        }
+
+        .btn-4 {
+            align-items: right;
+        }
+
+        .btn-4>button {
+            width: 182px;
+            height: 69px;
+            border-radius: 7px;
+            background-color: #fcc302;
+            color: white;
+            border: none;
+
+        }
+
+        @media only screen and (max-width:600px) {
+            #sec-4 {
+                height: auto;
+                width: auto;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                padding: 50px;
+                flex-direction: column;
+            }
+        }
+
+        #sec-5 {
+            height: auto;
+            width: auto;
+            background-color: #fcc302;
+            padding: 50px;
+        }
+
+        .text-9 {
+            padding: 30px;
+        }
+
+        .text-9 h1 {
+            font-size: 75px;
+            color: #ffffff;
+            font-weight: 700;
+            font-family: "Poppins";
+            text-align: center;
+        }
+
+        .text-9 p {
+            font-size: 33px;
+            color: #ffffff;
+            font-weight: 400;
+            font-family: "Poppins";
+            text-align: center;
+        }
+
+        .img-1 {
+            display: flex;
+            justify-content: center;
+            gap: 80px;
+        }
+
+        .img-1>div {
+            height: 500px;
+            width: 300px;
+            /* border: 2px solid red; */
+        }
+
+        .img4 {
+            height: 300px;
+            width: 300px;
+            background-image: url(../image/dog.1.svg);
+            background-size: cover;
+        }
+
+        .img5 {
+            height: 300px;
+            width: 300px;
+            background-image: url(../image/dog.2.svg);
+            background-size: cover;
+        }
+
+        .img6 {
+            height: 300px;
+            width: 300px;
+            background-image: url(../image/dog.3.svg);
+            background-size: cover;
+        }
+
+        .dollor {
+            font-size: 42px;
+            color: #ffffff;
+            font-weight: 600;
+            font-family: "Poppins";
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 20px;
+        }
+
+        .dlr {
+            text-decoration-line: line-through;
+        }
+
+        button {
+            width: 199px;
+            height: 60px;
+            border-radius: 30px;
+            background-color: #00bec9;
+            font-size: 25px;
+            color: #ffffff;
+            font-weight: 600;
+            font-family: "Poppins";
+            border: none;
+        }
+
+        .box1 {
+            text-align: center;
+        }
+
+        @media only screen and (max-width:600px) {
+            #sec-5 {
+                height: auto;
+                width: auto;
+                background-color: #fcc302;
+            }
+
+            .img-1 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 80px;
+                flex-direction: column;
+            }
+
+        }
+
+        #sec-6 {
+            height: auto;
+            width: auto;
+            background-color: white;
+            padding: 50px;
+        }
+
+        .text-11 {
+            padding: 60px;
+        }
+
+        .text-11>h1 {
+            font-size: 75px;
+            color: #313243;
+            font-weight: 700;
+            font-family: "Poppins";
+            text-align: center;
+        }
+
+        .text-11>p {
+            font-size: 33px;
+            color: #313243;
+            font-weight: 400;
+            font-family: "Poppins";
+            text-align: center;
+        }
+
+        .img-2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .img-2>div {
+            height: 520px;
+            width: 350px;
+        }
+
+        .box2 {
+            text-align: center;
+        }
+
+        .img7 {
+            height: 350px;
+            width: 350px;
+            background-image: url(../image/dr.img.1.svg);
+        }
+
+        .img8 {
+            height: 350px;
+            width: 350px;
+            background-image: url(../image/dr.img.2.svg);
+        }
+
+        .img9 {
+            height: 350px;
+            width: 350px;
+            background-image: url(../image/dr.img.3.svg);
+        }
+
+        .box2>h1 {
+            font-size: 29px;
+            color: #313243;
+            font-weight: 700;
+            font-family: "Poppins";
+            text-align: center;
+            padding: 10px;
+        }
+
+        .box2>h2 {
+            font-size: 25px;
+            color: #313243;
+            font-weight: 400;
+            font-family: "Poppins";
+            text-align: center;
+            padding: 10px;
+        }
+
+        .img-3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            padding: 10px;
+        }
+
+        .img10 {
+            height: 30px;
+            width: 30px;
+            /* border: 2px solid black; */
+            background-color: #daac00;
+            border-radius: 50%;
+            background-image: url(../image/Instagram.svg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 20px;
+
+        }
+
+        .img11 {
+            height: 30px;
+            width: 30px;
+            /* border: 2px solid black; */
+            background-color: #daac00;
+            border-radius: 50%;
+            background-image: url(../image/Facebook.svg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 20px;
+
+        }
+
+        .img12 {
+            height: 30px;
+            width: 30px;
+            /* border: 2px solid black; */
+            background-color: #daac00;
+            border-radius: 50%;
+            background-image: url(../image/Twitter.svg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 20px;
+
+        }
+
+        .img13 {
+            height: 30px;
+            width: 30px;
+            /* border: 2px solid black; */
+            background-color: #daac00;
+            border-radius: 50%;
+            background-image: url(../image/WhatsApp.svg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 20px;
+
+        }
+
+        @media only screen and (max-width:600px) {
+            #sec-6 {
+                height: auto;
+                width: auto;
+                background-color: white;
+            }
+
+            .img-2 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 40px;
+                flex-direction: column;
+            }
+
+            .box2>h1 {
+                padding: 10px;
+            }
+
+            .box2>h2 {
+                padding: 10px;
+            }
+
+            .img-3 {
+                padding: 10px;
+            }
+        }
+
+        #sec-7 {
+            height: auto;
+            width: auto;
+            /* padding:50px; */
+        }
+
+        .img-6 {
+            height: 600px;
+            width: auto;
+            background-image: url(../image/bigimg..svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .img-7 {
+            height: 600px;
+            width: auto;
+            background-image: url(../image/Shape1.svg);
+
+        }
+
+        .box3 {
+            height: 600px;
+            width: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 150px;
+
+        }
+
+        .box3>div {
+            height: 300px;
+            width: 300px;
+        }
+
+        .box-1>h1 {
+            font-size: 42px;
+            color: #ffffff;
+            font-weight: 500;
+            font-family: "Poppins";
+            text-align: center;
+        }
+
+        .box-1>h2 {
+            font-size: 38px;
+            color: #ffffff;
+            font-weight: 700;
+            font-family: "Poppins";
+            text-align: center;
+        }
+
+        .img22 {
+            height: 100px;
+            width: 110px;
+            background-image: url(../image/Icon\ \(1\)\ \(1\).svg);
+            background-repeat: no-repeat;
+            margin-left: 100px;
+
+        }
+
+        .img23 {
+            height: 100px;
+            width: 110px;
+            background-image: url(../image/Icon\ \(2\)\ \(1\).svg);
+            background-repeat: no-repeat;
+            margin-left: 110px;
+
+        }
+
+        .img24 {
+            height: 100px;
+            width: 110px;
+            background-image: url(../image/Icon\ \(3\)\ \(1\).svg);
+            background-repeat: no-repeat;
+            margin-left: 100px;
+
+        }
+
+        @media only screen and (max-width:600px) {
+            #sec-7 {
+                height: auto;
+                width: auto;
+            }
+
+            .img-6 {
+                height: 1000px;
+                width: 600px;
+                background-image: url(../image/bigimg..svg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            .img-7 {
+                height: 1000px;
+                width: 600px;
+                background-image: url(../image/Shape.svg);
+            }
+
+            .box3 {
+                height: 1000px;
+                width: 600px;
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                gap: 50px;
+                flex-direction: column;
+            }
+        }
+
+        #sec-8 {
+            height: auto;
+            width: auto;
+            padding: 50px;
+        }
+
+        .text-18>h1 {
+            font-size: 75px;
+            color: #313243;
+            font-weight: 700;
+            font-family: "Poppins";
+            text-align: center;
+            padding: 20px;
+
+        }
+
+        .text-18>p {
+            font-size: 33px;
+            color: #313243;
+            font-weight: 400;
+            font-family: "Poppins";
+            text-align: center;
+            padding: 20px;
+        }
+
+        .box4 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .box4>div {
+            height: 550px;
+            width: 300px;
+        }
+
+        .box-2 {
+            text-align: start;
+        }
+
+        .img25 {
+            height: 300px;
+            width: 300px;
+            background-image: url(../image/dogimg.1.svg);
+            background-size: cover;
+        }
+
+        .img26 {
+            height: 300px;
+            width: 300px;
+            background-image: url(../image/dogimg.2.svg);
+            background-size: cover;
+        }
+
+        .img27 {
+            height: 300px;
+            width: 300px;
+            background-image: url(../image/dogimg.3.svg);
+            background-size: cover;
+        }
+
+        .box-2>h1 {
+            font-size: 25px;
+            color: #313243;
+            font-weight: 600;
+            font-family: "Poppins";
+            padding: 0px 10px;
+        }
+
+        .box-2>h5 {
+            font-size: 17px;
+            color: #00bec9;
+            font-weight: 400;
+            font-family: "Poppins";
+            padding: 10px
+        }
+
+        .box-2>p {
+            font-size: 17px;
+            color: #313243;
+            font-weight: 400;
+            font-family: "Poppins";
+            padding: 10px;
+        }
+
+        @media only screen and (max-width:600px) {
+            #sec-8 {
+                height: auto;
+                width: auto;
+                padding: 50px;
+            }
+
+            .text-18>h1 {
+                padding: 10px;
+            }
+
+            .text-18>p {
+                padding: 10px;
+            }
+
+            .box4 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 50px;
+                flex-direction: column;
+                padding: 10px;
+            }
+
+            .box-2>h1 {
+                padding: 10px;
+            }
+
+            .box-2>h5 {
+                padding: 10px;
+            }
+
+            .box-2>p {
+                padding: 10px;
+            }
+        }
+
+        #sec-9 {
+            height: 800px;
+            width: auto;
+            background-color: #343434;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 60px;
+
+        }
+
+        .box-3 {
+            height: 400px;
+            width: 300px;
+            /* border: 2px solid red; */
+        }
+
+        .box-5 {
+            height: 500px;
+            width: 600px;
+            /* border: 2px solid red; */
+            padding: 30px;
+        }
+
+        .box-3>h4 {
+            font-size: 38px;
+            color: #ffffff;
+            font-weight: 600;
+            font-family: "Poppins";
+            text-align: start;
+            padding: 10px;
+
+        }
+
+        .box-3 ul {
+            font-size: 25px;
+            line-height: 44px;
+            color: #ffffff;
+            font-weight: 400;
+            font-family: "Poppins";
+            padding: 10px;
+
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        .box-5>h2 {
+            font-size: 38px;
+            line-height: 8px;
+            color: #ffffff;
+            font-weight: 600;
+            font-family: "Poppins";
+            text-align: right;
+            padding: 20px;
+        }
+
+        .box-5>p {
+            font-size: 25px;
+            line-height: 33px;
+            color: #ffffff;
+            font-weight: 400;
+            font-family: "Poppins";
+            text-align: right;
+            padding: 20px;
+        }
+
+        .search-bar2 {
+            display: flex;
+            justify-content: end;
+            padding: 20px;
+        }
+
+        .sub-3 {
+            height: 50px;
+            width: 300px;
+            background-color: #fcc302;
+            display: flex;
+
+        }
+
+        .sub-4 {
+            height: 50px;
+            width: 100px;
+            background-color: #00bec9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .fa-brands {
+            font-size: 40px;
+            color: #ffffff;
+        }
+
+
+        .logos {
+            display: flex;
+            justify-content: end;
+            /* align-items: ; */
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .logos1 {
+            height: 50px;
+            width: 50px;
+            background-image: url(../image/Instagram.svg);
+            background-size: cover;
+        }
+
+        .logos2 {
+            height: 50px;
+            width: 50px;
+            background-image: url(../image/Facebook.svg);
+            background-size: cover;
+        }
+
+        .logos3 {
+            height: 50px;
+            width: 50px;
+            background-image: url(../image/Twitter.svg);
+            background-size: cover;
+        }
+
+        .logos4 {
+            height: 50px;
+            width: 50px;
+            background-image: url(../image/WhatsApp.svg);
+            background-size: cover;
+        }
+
+        @media only screen and (max-width:600px) {
+
+            #sec-9 {
+                height: 1300px;
+                width: auto;
+                background-color: #343434;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 60px;
+                flex-direction: column;
+
+            }
+            .box-3> h4{
+                text-align: center;
+            }
+
+            .search-bar2 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
+                margin-left: 80px;
+                text-align: center;
+            }
+
+            .sub-3 {
+                height: 50px;
+                width: 300px;
+                background-color: #fcc302;
+                display: flex;
+
+            }
+
+            .sub-4 {
+                height: 50px;
+                width: 100px;
+                background-color: #00bec9;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .fa-brands {
+                font-size: 40px;
+                color: #ffffff;
+            }
+
+            .box-5>h2 {
+                font-size: 38px;
+                line-height: 8px;
+                color: #ffffff;
+                font-weight: 600;
+                font-family: "Poppins";
+                text-align: center;
+            }
+
+            .box-5>p {
+                font-size: 25px;
+                line-height: 33px;
+                color: #ffffff;
+                font-weight: 400;
+                font-family: "Poppins";
+                text-align: center;
+            }
+
+            .search-bar2 {
+                display: flex;
+                justify-content: start;
+                padding: 25px;
+            }
+
+            .logos {
+                display: flex;
+                justify-content: center;
+                /* align-items: ; */
+                gap: 20px;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="logo">
+        </div>
+        <div class="link">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Service</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+        <div class="search-bar">
+
+            <div class="sub-1">
+                <input type="text" name="" id="" class="k" placeholder="Search...">
+            </div>
+            <div class="sub-2">
+                <i class="fa-brands fa-Telegram"></i>
+            </div>
+
+        </div>
+    </div>
+    <div id="sec-1">
+        <div class="sec-sub-1">
+            <div class="text-1">
+                <h1>First i wanted to be Veterinarian</h1>
+            </div>
+            <div class="text-2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt nulla optio cumque ex, voluptatem
+                    sint aspernatur, neque officiis debitis ea nihil est distinctio cupiditate. Minus at fugiat
+                    pariatur? Rem, nihil.</p>
+            </div>
+            <div class="buttons">
+                <div class="btn-1">
+                    <button>Contact Us</button>
+                </div>
+                <div class="btn-2">
+                    <button>Our Service</button>
+                </div>
+            </div>
+        </div>
+        <div class="sec-sub-2"></div>
+    </div>
+    <div id="sec-2">
+        <div class="sec-sub-3">
+            <div class="text-3">
+                <h1> As a veterinarian and lover of animals.</h1>
+            </div>
+            <div class="text-4">
+                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, blanditiis official assumenda
+                    maxime
+                    ullam.</p>
+            </div>
+            <div class="btn-3"><button>Our Service</button>
+            </div>
+        </div>
+        <div class="sec-sub-4">
+            <div class="a1"></div>
+            <div class="a2"></div>
+            <div class="a3">
+                <div class="a4">
+                    <i class="fa-solid fa-play"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sec-3">
+        <div class="text-5">
+            <h1>Title Here</h1>
+            <p>Lorem Ipsum available,but the majority have,<br> suffered alteration in some form.</p>
+        </div>
+        <div class="img">
+            <div class="box">
+                <div class="img1"></div>
+                <h1>Veterinarian</h1>
+                <p>Lorem Ipsum available,but the majority have, suffered alteration in some form.</p>
+            </div>
+            <div class="box">
+                <div class="img2"></div>
+                <h1>Vaccination Care</h1>
+                <p>Lorem Ipsum available,but the majority have, suffered alteration in some form.</p>
+            </div>
+            <div class="box">
+                <div class="img3"></div>
+                <h1>Dental Care</h1>
+                <p>Lorem Ipsum available,but the majority have, suffered alteration in some form.</p>
+            </div>
+        </div>
+    </div>
+    <div id="sec-4">
+        <div class="sec-sub-7">
+            <div class="a5"></div>
+            <div class="a6"></div>
+            <div class="a7">
+                <div class="a8">
+                    <i class="fa-solid fa-play"></i>
+                </div>
+            </div>
+        </div>
+        <div class="sec-sub-8">
+            <div class="text-7">
+                <h1> As a veterinarian and lover of animals.</h1>
+            </div>
+            <div class="text-8">
+                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, blanditiis official assumenda
+                    maxime
+                    ullam.</p>
+            </div>
+            <div class="btn-4">
+                <button>Our Service</button>
+            </div>
+        </div>
+    </div>
+    <div id="sec-5">
+        <div class="text-9">
+            <h1>Title Here</h1>
+            <p>Lorem Ipsum available,but the majority have,<br> suffered alteration in some form.</p>
+        </div>
+        <div class="img-1">
+            <div class="box1">
+                <div class="img4"></div>
+                <div class="dollor">
+                    <div class="dlr">$50</div>
+                    <div>$30</div>
+                </div>
+                <button>Buy Now</button>
+            </div>
+            <div class="box1">
+                <div class="img5"></div>
+                <div class="dollor">
+                    <div class="dlr">$40</div>
+                    <div>$25</div>
+                </div>
+                <button>Buy Now</button>
+            </div>
+            <div class="box1">
+                <div class="img6"></div>
+                <div class="dollor">
+                    <div class="dlr">$45</div>
+                    <div>$20</div>
+                </div>
+                <button>Buy Now</button>
+            </div>
+        </div>
+    </div>
+    <div id="sec-6">
+        <div class="text-11">
+            <h1>The vetcare team</h1>
+            <p>Lorem Ipsum available,but the majority have,<br> suffered alteration in some form.</p>
+        </div>
+        <div class="img-2">
+            <div class="box2">
+                <div class="img7"></div>
+                <h1>Jennifer Mullen</h1>
+                <h2>VETERINARY</h2>
+                <div class="img-3">
+                    <div class="img10"></div>
+                    <div class="img11"></div>
+                    <div class="img12"></div>
+                    <div class="img13"></div>
+                </div>
+
+            </div>
+            <div class="box2">
+                <div class="img8"></div>
+                <h1>Sheeran collins</h1>
+                <h2>ADMINISTRATION</h2>
+                <div class="img-3">
+                    <div class="img10"></div>
+                    <div class="img11"></div>
+                    <div class="img12"></div>
+                    <div class="img13"></div>
+                </div>
+            </div>
+            <div class="box2">
+                <div class="img9"></div>
+                <h1>Jennifer Mullan</h1>
+                <h2>VETERINARY</h2>
+                <div class="img-3">
+                    <div class="img10"></div>
+                    <div class="img11"></div>
+                    <div class="img12"></div>
+                    <div class="img13"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sec-7">
+        <div class="img-6">
+            <div class="img-7">
+                <div class="box3">
+                    <div class="box-1">
+                        <div class="img22"></div>
+                        <h1>+34793</h1>
+                        <h2>Happy client</h2>
+                    </div>
+                    <div class="box-1">
+                        <div class="img23"></div>
+                        <h1>+45388</h1>
+                        <h2>Departament</h2>
+
+                    </div>
+                    <div class="box-1">
+                        <div class="img24"></div>
+                        <h1>+54762</h1>
+                        <h2>Vaccinations</h2>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sec-8">
+        <div class="text-18">
+            <h1>Recent Posts</h1>
+            <p>Lorem Ipsum available,but the majority have,<br> suffered alteration in some form.</p>
+        </div>
+        <div class="box4">
+            <div class="box-2">
+                <div class="img25"></div>
+                <h1>As a veterinarian and<br> lover of animals</h1>
+                <h5>February 09,2020</h5>
+                <p>Lorem Ipsum available,but the majority have, suffered alteration in some word which look.</p>
+                <h5>Read More+</h5>
+            </div>
+            <div class="box-2">
+                <div class="img26"></div>
+                <h1>As a veterinarian and<br> lover of animals</h1>
+                <h5>February 10,2020</h5>
+                <p>Lorem Ipsum available,but the majority have, suffered alteration in some word which look.</p>
+                <h5>Read More+</h5>
+            </div>
+            <div class="box-2">
+                <div class="img27"></div>
+                <h1>As a veterinarian and<br> lover of animals</h1>
+                <h5>February 11,2020</h5>
+                <p>Lorem Ipsum available,but the majority have, suffered alteration in some word which look.</p>
+                <h5>Read More+</h5>
+            </div>
+        </div>
+    </div>
+    <div id="sec-9">
+        <div class="box-3">
+            <h4>About</h4>
+            <ul>
+                <li>History</li>
+                <li>Our Team</li>
+                <li>Brand Guidlines</li>
+                <li>Terms & Condition </li>
+                <li>Privacy Policy</li>
+            </ul>
+        </div>
+        <div class="box-3">
+            <h4>Services</h4>
+            <uL>
+                <li>How to Order</li>
+                <li>Our Product</li>
+                <li>Order Status</li>
+                <li>Pramo </li>
+                <li>Payment Methods</li>
+            </uL>
+        </div>
+        <div class="box-5">
+            <h2>Title here</h2>
+            <p>Lorem lpsum available, but the majorit</p>
+            <div class="search-bar2">
+                <div class="sub-3">
+                    <input type="text" name="" id="" class="k" placeholder="">
+                    <div class="sub-4">
+                        <i class="fa-brands fa-telegram"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="logos">
+                <div class="logos1"></div>
+                <div class="logos2"></div>
+                <div class="logos3"></div>
+                <div class="logos4"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
